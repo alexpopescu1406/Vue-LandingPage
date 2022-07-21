@@ -9,7 +9,7 @@
     data-aos-offset="500"
 
   >
-  <p class="gamestext">GAMES</p>
+  <p class="gamestext">{{ games }}</p>
   <swiper
     :spaceBetween="30"
     :effect="'fade'"
@@ -18,20 +18,11 @@
       clickable: true,
     }"
     :modules="modules"
-    class="mySwiper"
-  >
-    <swiper-slide
-      ><img
-        src="../../images/slide1.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="../../images/slide2.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="../../images/slide3.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img src="../../images/slide1.jpg"
-    /></swiper-slide>
+    class="mySwiper">
+    <swiper-slide> <img src="../../images/slide1.jpg" /> </swiper-slide>
+    <swiper-slide> <img src="../../images/slide2.jpg" /> </swiper-slide> 
+    <swiper-slide> <img src="../../images/slide3.jpg" /> </swiper-slide>
+    <swiper-slide> <img src="../../images/slide1.jpg" /> </swiper-slide>
   </swiper>
 </div>
 </template>
@@ -57,6 +48,7 @@ export default {
   setup() {
     return {
       modules: [EffectFade, Navigation, Pagination],
+      games: 'GAMES',
     };
   },
 };

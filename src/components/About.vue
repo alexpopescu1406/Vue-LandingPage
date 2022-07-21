@@ -6,23 +6,24 @@
     data-aos-easing="ease-in-out-quad"
     data-aos-mirror="false"
     data-aos-once="true"
-    anchorPlacement="bottom"
-  >
+    anchorPlacement="bottom">
 <div class="about" id="c1">
-    <h1>ABOUT US</h1> 
-        <p class="abouttextcss"><em>Providing legendary mobile games.</em></p>
-        <p class="abouttextcss"><em>Dedicated team of mobile games developers.</em></p>
-        <p class="abouttextcss"><em>We are based in Bucharest.</em></p><br>               
-    <h1>FOLLOW US</h1>
+    <h1>{{ about }}</h1> 
+        <div class="abouttextcss">
+            {{ msg1 }}<br>
+            {{ msg2 }}<br> 
+            {{ msg3 }}<br>
+        </div>  
+    <h1>{{ follow }}</h1>
     <div class="media">
-        <a href="https://facebook.com">
-            <img src="https://imagizer.imageshack.com/v2/xq90/922/YQYc7D.png">
+        <a href="https://facebook.com" target="_blank">
+            <img :src="facebook">
         </a>
-        <a href="https://youtube.com">
-            <img src="https://imagizer.imageshack.com/v2/xq90/923/0qIVCk.png"> 
+        <a href="https://youtube.com" target="_blank">
+            <img :src="youtube"> 
         </a>
-        <a href="https://instagram.com">
-            <img src="https://imagizer.imageshack.com/v2/xq90/922/W4Lkoe.png">
+        <a href="https://instagram.com" target="_blank">
+            <img :src="instagram">
         </a>
 </div>
 </div>
@@ -33,7 +34,20 @@
 <script>
 export default {
     name: 'About',
-};
+
+data () {
+  return {
+    about: 'ABOUT US',
+    follow: 'FOLLOW US',
+    msg1: 'Providing legendary mobile games.',
+    msg2: 'Dedicated team of mobile games developers.',
+    msg3: 'We are based in Bucharest.',
+    facebook: 'https://imagizer.imageshack.com/v2/xq90/922/YQYc7D.png',
+    youtube: 'https://imagizer.imageshack.com/v2/xq90/923/0qIVCk.png',
+    instagram: 'https://imagizer.imageshack.com/v2/xq90/922/W4Lkoe.png'
+}
+}
+}
 
 </script>
 

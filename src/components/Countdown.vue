@@ -13,8 +13,7 @@
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="false"
-        data-aos-once="true"
-        >
+        data-aos-once="true">
         <div>
           <radial-progress-bar
             :diameter="diameter"
@@ -25,8 +24,7 @@
             :innerStrokeWidth="innerStrokeWidth"
             :startColor="startColor"
             :stopColor="stopColor"
-            :innerStrokeColor="innerStrokeColor"
-          >
+            :innerStrokeColor="innerStrokeColor">
             <p class="completedSteps">{{ days }}</p>
           </radial-progress-bar>
           <span class="label-style">Days</span>
@@ -40,8 +38,7 @@
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="false"
-        data-aos-once="true"
-        >
+        data-aos-once="true">
         <div>
           <radial-progress-bar
             :diameter="diameter"
@@ -52,8 +49,7 @@
             :innerStrokeWidth="innerStrokeWidth"
             :startColor="startColor"
             :stopColor="stopColor"
-            :innerStrokeColor="innerStrokeColor"
-          >
+            :innerStrokeColor="innerStrokeColor">
             <p class="completedSteps">{{ hours }}</p>
           </radial-progress-bar>
           <span class="label-style">Hours</span>
@@ -67,8 +63,7 @@
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="false"
-        data-aos-once="true"
-        >
+        data-aos-once="true">
         <div>
           <radial-progress-bar
             :diameter="diameter"
@@ -79,8 +74,7 @@
             :innerStrokeWidth="innerStrokeWidth"
             :startColor="startColor"
             :stopColor="stopColor"
-            :innerStrokeColor="innerStrokeColor"
-          >
+            :innerStrokeColor="innerStrokeColor">
             <p class="completedSteps">{{ minutes }}</p>
           </radial-progress-bar>
           <span class="label-style">Minutes</span>
@@ -106,8 +100,7 @@
             :innerStrokeWidth="innerStrokeWidth"
             :startColor="startColor"
             :stopColor="stopColor"
-            :innerStrokeColor="innerStrokeColor"
-          >
+            :innerStrokeColor="innerStrokeColor">
             <p class="completedSteps">{{ seconds }}</p>
           </radial-progress-bar>
           <span class="label-style">Seconds</span>
