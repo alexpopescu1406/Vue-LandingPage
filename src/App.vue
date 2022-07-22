@@ -7,13 +7,9 @@
 
 <div v-if="showModal">
 <Register @close="toggleModal">
-  <template v-slot:links>
-    <a href="#">sign up</a>
-  </template>
-  <h2>Subscribe to our Newsletter</h2>
-  <p>Get the latest news and best offers!</p>
-  <p>Write your valid email: {{ message }}</p>
-  <input v-model="message" placeholder="email" /> 
+  <h2><b>Subscribe to our Newsletter</b></h2>
+  <p><b>Get the latest news and best offers!</b></p>
+  
 </Register>
 </div>
 <div
