@@ -23,7 +23,7 @@
  <img src="../images/horizline.png" alt="line" class="horizline">
 
 <ComingSoon />
-<Countdown />
+<!--Countdown />-->
 
  <img src="../images/horizline.png" alt="line" class="horizline">
 
@@ -110,7 +110,6 @@ methods: {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: top;
   white-space: nowrap;
   display: block;
   margin: auto;

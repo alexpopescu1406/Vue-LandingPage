@@ -6,15 +6,14 @@
     data-aos-easing="ease-in-out"
     data-aos-mirror="false"
     data-aos-once="true"
-    data-aos-offset="600"
-  >
+    data-aos-offset="600">
 <div class="play" id="c3">
-    <h2 class="playtext">PLAY ON:</h2>
+    <h2 class="playtext">{{ play }}</h2>
         <a href="https://play.google.com/store/apps/details?id=com.TopLexGames.CaptainSmashTok&gl=RO" target="_blank">
-            <img class="android" src="../../images/google-play-badge.png">
+            <img class="android" :src="require('../../images/google-play-badge.png')" alt="google">
         </a>
         <a href="https://www.apple.com/app-store/" target="_blank"> 
-            <img class="apple" src="../../images/apple.png">
+            <img class="apple" :src="require('../../images/apple.png')" alt="ios">
         </a>
 </div>
 </div>
@@ -23,6 +22,11 @@
 <script>
 export default {
     name: 'Play',
+data () {
+    return {
+        play: 'PLAY ON:'
+    }
+}
 };
 </script>
 

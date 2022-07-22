@@ -6,12 +6,11 @@
     data-aos-easing="ease-in-out"
     data-aos-mirror="false"
     data-aos-once="true"
-    data-aos-offset="900"
-  >
+    data-aos-offset="900">
 <div class="contacts" id="c4">
     <h2 class="contacthead">{{ contact }}</h2>
         <div class="contactus rright">
-            <img class="zoom" alt="text" src="../../images/bucharest.jpg" width="300 px" height="150 px">
+            <img class="zoom" alt="bucharest" :src="require('../../images/bucharest.jpg')" width="300" height="150">
         </div>
         <div class="contactus lleft">
             <i class="fa-solid fa-location-dot"></i>{{ location }}<br>

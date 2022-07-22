@@ -17,13 +17,13 @@
     <h1>{{ follow }}</h1>
     <div class="media">
         <a href="https://facebook.com" target="_blank">
-            <img :src="facebook">
+            <img :src="facebook" alt="facebook">
         </a>
         <a href="https://youtube.com" target="_blank">
-            <img :src="youtube"> 
+            <img :src="youtube" alt="youtube"> 
         </a>
         <a href="https://instagram.com" target="_blank">
-            <img :src="instagram">
+            <img :src="instagram" alt="instagram">
         </a>
 </div>
 </div>
@@ -45,8 +45,7 @@ data () {
     facebook: 'https://imagizer.imageshack.com/v2/xq90/922/YQYc7D.png',
     youtube: 'https://imagizer.imageshack.com/v2/xq90/923/0qIVCk.png',
     instagram: 'https://imagizer.imageshack.com/v2/xq90/922/W4Lkoe.png'
-}
-}
+}}
 }
 
 </script>

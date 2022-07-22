@@ -6,23 +6,27 @@
     data-aos-duration="1200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="false"
-    data-aos-once="true"
-  >
+    data-aos-once="true">
 <div class="comingsoon">
-    <div class="appear37">
-        <h1>COMING SOON</h1>
+        <h1>{{ coming }}</h1>
             <div class="comingimage">
-                <img src="../../images/coming.png" alt="coming soon" width="900px">
-                    <div class="centered">Rocket Mania</div>
-                        
+                <img :src="require('../../images/coming.png')" alt="coming soon" width="900">
+                    <div class="centered">{{ game }}</div>
             </div>
     </div>
-</div>
 </div>
 </template>
 
 <script>
-
+export default {
+    name: 'ComingSoon',
+    data () { 
+        return {
+        coming: 'COMING SOON',
+        game: 'Rocket Mania'
+    }
+    }
+}
 </script >
 
 <style scoped>

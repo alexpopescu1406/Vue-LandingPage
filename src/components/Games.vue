@@ -6,9 +6,7 @@
     data-aos-easing="ease-out-back"
     data-aos-mirror="false"
     data-aos-once="true"
-    data-aos-offset="500"
-
-  >
+    data-aos-offset="500">
   <p class="gamestext">{{ games }}</p>
   <swiper
     :spaceBetween="30"
@@ -19,10 +17,10 @@
     }"
     :modules="modules"
     class="mySwiper">
-    <swiper-slide> <img src="../../images/slide1.jpg" /> </swiper-slide>
-    <swiper-slide> <img src="../../images/slide2.jpg" /> </swiper-slide> 
-    <swiper-slide> <img src="../../images/slide3.jpg" /> </swiper-slide>
-    <swiper-slide> <img src="../../images/slide1.jpg" /> </swiper-slide>
+    <swiper-slide> <img :src="require('../../images/slide1.jpg')" alt="slide1" /> </swiper-slide>
+    <swiper-slide> <img :src="require('../../images/slide2.jpg')" alt="slide2" /> </swiper-slide> 
+    <swiper-slide> <img :src="require('../../images/slide3.jpg')" alt="slide3" /> </swiper-slide>
+    <swiper-slide> <img :src="require('../../images/slide1.jpg')" alt="slide1" /> </swiper-slide>
   </swiper>
 </div>
 </template>

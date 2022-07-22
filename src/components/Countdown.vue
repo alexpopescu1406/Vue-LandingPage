@@ -88,8 +88,7 @@
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="false"
-        data-aos-once="true"
-        >
+        data-aos-once="true">
         <div>
           <radial-progress-bar
             :diameter="diameter"
