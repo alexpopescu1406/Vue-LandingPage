@@ -16,7 +16,17 @@
   <input v-model="message" placeholder="email" /> 
 </Register>
 </div>
+<div
+    data-aos="fade-down-right"
+    data-aos-delay="0"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out-quad"
+    data-aos-mirror="false"
+    data-aos-once="true"
+    data-aos-offset="-20"
+    anchorPlacement="bottom">
 <button class="button-65" @click="toggleModal">Subscribe</button>
+</div>
 
   <img src="../images/horizline.png" alt="line" class="horizline">
 
