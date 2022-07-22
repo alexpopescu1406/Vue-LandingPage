@@ -3,14 +3,20 @@
 
   <img src="../images/horizline.png" alt="line" class="horizline">
 
-<About />
-
+<About /><br>
 
 <div v-if="showModal">
-<Register />
+<Register @close="toggleModal">
+  <template v-slot:links>
+    <a href="#">sign up</a>
+  </template>
+  <h2>Subscribe to our Newsletter</h2>
+  <p>Get the latest news and best offers!</p>
+  <p>Write your valid email: {{ message }}</p>
+  <input v-model="message" placeholder="email" /> 
+</Register>
 </div>
 <button class="button-65" @click="toggleModal">Subscribe</button>
-
 
   <img src="../images/horizline.png" alt="line" class="horizline">
 
@@ -23,13 +29,11 @@
  <img src="../images/horizline.png" alt="line" class="horizline">
 
 <ComingSoon />
-<!--Countdown />-->
+<Countdown />
 
  <img src="../images/horizline.png" alt="line" class="horizline">
 
 <Contact />
-
-
 </template>
 
 <script>
