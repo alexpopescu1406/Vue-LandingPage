@@ -4,12 +4,11 @@
         <a href="#c1"><i class="fa fa-user"> ABOUT</i> </a>
         <a href="#c2"><i class="fa fa-gamepad"> GAMES</i></a>
         <a href="#c3"><i class="fa-solid fa-mobile-screen"> PLATFORMS</i></a>
+        <a href="#c5"><i class="fa-solid fa-hourglass"> COMING SOON</i></a>
         <a href="#c4"><i class="fa-solid fa-envelope"> CONTACT</i></a>
     </div> 
         
-    <div class="header-image" id="c0">
-    </div> 
-
+    <div class="header-image" id="c0"></div> 
 </template>
 
 <script>
@@ -25,6 +24,7 @@
     width: 100%;
     height: 450px;
 }
+
 .navbar {
     width:100%;
     background-color:black;
@@ -33,6 +33,7 @@
     top: 0;
     z-index: 9000;
 }
+
 .navbar a {
     float: left;
     text-align: center;

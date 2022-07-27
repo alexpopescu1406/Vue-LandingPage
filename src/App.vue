@@ -1,6 +1,7 @@
 <template>
 <Header />
 
+  <div id="c1"></div>
   <img src="../images/horizline.png" alt="line" class="horizline">
 
 <About /><br>
@@ -24,13 +25,15 @@
 <button class="button-65" @click="toggleModal">Subscribe</button>
 </div>
 
+  <div id="c2"></div>
   <img src="../images/horizline.png" alt="line" class="horizline">
 
 <Games />
 
+  <div id="c3"></div>
  <img src="../images/horizline.png" alt="line" class="horizline">
 
-<Play />
+<Platforms />
 
  <img src="../images/horizline.png" alt="line" class="horizline">
 
@@ -48,7 +51,7 @@ import ComingSoon from './components/ComingSoon.vue'
 import Header from './components/Header.vue'
 import About from './components/About.vue'
 import Games from './components/Games.vue'
-import Play from './components/Play.vue'
+import Platforms from './components/Platforms.vue'
 import Countdown from './components/Countdown.vue'
 import Register from './components/Register.vue'
 
@@ -58,7 +61,7 @@ export default {
     Header,
     About,
     Games,
-    Play,
+    Platforms,
     ComingSoon,
     Contact,
     Countdown,
@@ -69,13 +72,11 @@ data () {
     showModal:  false
   }
 },
-
 methods: {
     toggleModal() {
         this.showModal = !this.showModal
     }
 }
-
 }
 </script>
 
@@ -125,7 +126,6 @@ methods: {
   margin: auto;
   
 }
-
 .button-65:hover {
   background-color: #1366d6;
   box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
@@ -133,21 +133,17 @@ methods: {
   transform: translateY(0);
   transition-duration: .35s;
 }
-
 .button-65:hover:after {
   opacity: .5;
 }
-
 .button-65:active {
   box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
   transform: translateY(2px);
   transition-duration: .35s;
 }
-
 .button-65:active:after {
   opacity: 1;
 }
-
 @media (min-width: 768px) {
   .button-65 {
     padding: 14px 22px;

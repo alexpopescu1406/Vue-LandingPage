@@ -7,6 +7,7 @@
     data-aos-mirror="false"
     data-aos-once="true"
     data-aos-offset="500">
+    
   <p class="gamestext">{{ games }}</p>
   <swiper
     :spaceBetween="30"
@@ -22,7 +23,7 @@
     <swiper-slide> <img :src="require('../../images/slide3.jpg')" alt="slide3" /> </swiper-slide>
     <swiper-slide> <img :src="require('../../images/slide1.jpg')" alt="slide1" /> </swiper-slide>
   </swiper>
-</div>
+  </div>
 </template>
 
 <script>
@@ -47,9 +48,9 @@ export default {
     return {
       modules: [EffectFade, Navigation, Pagination],
       games: 'GAMES',
-    };
+    }
   },
-};
+}
 </script>
 
 <style>

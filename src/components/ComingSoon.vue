@@ -7,14 +7,14 @@
     data-aos-easing="ease-in-out"
     data-aos-mirror="false"
     data-aos-once="true">
-<div class="comingsoon">
+    <div class="comingsoon">
         <h1>{{ coming }}</h1>
             <div class="comingimage">
                 <img :src="require('../../images/coming.png')" alt="coming soon" width="900">
                     <div class="centered">{{ game }}</div>
             </div>
     </div>
-</div>
+    </div>
 </template>
 
 <script>
@@ -24,7 +24,7 @@ export default {
         return {
         coming: 'COMING SOON',
         game: 'Rocket Mania'
-    }
+        }
     }
 }
 </script >
@@ -35,6 +35,7 @@ export default {
     color: white;
     font-size: 20px;
 }
+
 .comingimage {
     width: 100%;
     height: 100%;
@@ -44,11 +45,11 @@ export default {
     font-size: 40px;
     font-weight: bold;
 }
+
 .centered {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 </style>

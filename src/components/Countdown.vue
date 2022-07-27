@@ -1,5 +1,4 @@
 <template>
-
 <div class="app">
     <div class="flex-container">
     <div class="radial-progress-bar">
@@ -129,33 +128,39 @@ export default {
       startColor: "#192e5b",
       stopColor: "#BB1924",
       innerStrokeColor: "#E5E5E5",
-    };
+    }
   },
   components: {
     RadialProgressBar,
     VueCountdown,
   },
-};
+}
 </script>
+
 <style scoped>
 .flex-view {
   display: flex;
 }
+
 .completedSteps {
   font-size: 35px;
   color: #ffffff;
 }
+
 .label-style {
   color: #ffffff;
   font-size: 15px;
 }
+
 .app {
   text-align: center;
 }
+
 .flex-container {
   display: flex;
   justify-content: center;
 }
+
 .center {
   display: flex;
   align-items: center;

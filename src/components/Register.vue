@@ -1,25 +1,24 @@
 <template>
-<div class="backdrop" @click.self="closeModal">
+  <div class="backdrop" @click.self="closeModal">
     <div class="modal">
-        <slot></slot>
+      <slot></slot>
         <div class="actions">
-            <form @submit="handleSubmit">
-                <label>Email: </label>
-                <input type="email" required v-model="email" placeholder="email" /><br><br>
-
-                <label>Game events </label>
-                <input type="checkbox"><br>
-                <label>Game patches </label>
-                <input type="checkbox"><br>
-                <label>Games on sale </label>
-                <input type="checkbox"><br><br>
-                <button class="submited">Submit</button>
-            </form><br>
-            <slot name="links"></slot>
+          <form @submit="handleSubmit">
+            <label>Email: </label>
+            <input type="email" required v-model="email" placeholder="email" /><br><br>
+            <label>Game events </label>
+            <input type="checkbox"><br>
+            <label>Game patches </label>
+            <input type="checkbox"><br>
+            <label>Games on sale </label>
+            <input type="checkbox"><br><br>
+            <button class="submited">Submit</button>
+          </form><br>
+          <slot name="links"></slot>
         </div>
     </div>
-</div>
-</template>  
+  </div>
+</template>   
 
 <script>
 export default {
@@ -30,24 +29,26 @@ export default {
     handleSubmit() {
         alert("Subscribed")
     }
-},
+  },
 }
 </script>
 
 <style> 
 .modal {
     width: 600px;
-    padding: 20px;
+    padding: 20px;  
     margin: 100px auto;
     background: white;
     border-radius: 10px;
     color: black !important;
     text-align: center;
 }
+
 h2 {
     border: none;
     padding: 0; 
 }
+
 .backdrop {
     bottom: 0;
     position: fixed;

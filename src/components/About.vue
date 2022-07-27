@@ -7,7 +7,7 @@
     data-aos-mirror="false"
     data-aos-once="true"
     anchorPlacement="bottom">
-<div class="about" id="c1">
+    <div class="about">
     <h1>{{ about }}</h1> 
         <div class="abouttextcss">
             {{ msg1 }}<br>
@@ -25,10 +25,9 @@
         <a href="https://instagram.com" target="_blank">
             <img :src="instagram" alt="instagram">
         </a>
-</div>
-</div>
-</div>
-
+    </div>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -45,15 +44,16 @@ data () {
     facebook: 'https://imagizer.imageshack.com/v2/xq90/922/YQYc7D.png',
     youtube: 'https://imagizer.imageshack.com/v2/xq90/923/0qIVCk.png',
     instagram: 'https://imagizer.imageshack.com/v2/xq90/922/W4Lkoe.png'
-}}
+        }
+    }   
 }
-
 </script>
 
 <style scoped>
 .media {
     text-align: center;
 }
+
 .abouttextcss {
     color: white;
     text-align: center;
