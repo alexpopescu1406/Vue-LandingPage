@@ -9,10 +9,11 @@
     <input type="password" v-model="password" required>
     <div v-if="passwordError" class="error">{{ passwordError }}</div>
 
-    <label>Role:</label>
+    <label>Games played:</label>
     <select v-model="role">
-      <option value="developer">Web Developer</option>
-      <option value="designer">Web Designer</option>
+      <option value="developer">Captain SmashTok</option>
+      <option value="designer">TBD</option>
+      <option value="designer">Both</option>
     </select>
 
     <label>Skills (press alt + comma to add):</label>
@@ -27,7 +28,7 @@
     </div>
 
     <div class="submit">
-      <button>Create an Account</button>
+      <button class="submitted">Create an Account</button>
     </div>
   </form>
   </div>
@@ -90,6 +91,7 @@ export default {
     border-radius: 10px;
     color: black !important;
     text-align: center;
+    font-size: 20px;
 }
 .backdrop1 {
     bottom: 0;
@@ -151,6 +153,10 @@ export default {
     margin-top: 20px;
     color: white;
     border-radius: 20px;
+  }
+  .submitted {
+    text-align: center;
+    cursor: pointer;
   }
   .submit {
     text-align: center;
