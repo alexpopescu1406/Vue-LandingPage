@@ -1,4 +1,6 @@
 <template>
+<div class="backdrop1" @click.self="closeModal1">
+    <div class="modal1">
   <form @submit.prevent="handleSubmit">
     <label>Email:</label>
     <input type="email" v-model="email" required>
@@ -28,6 +30,8 @@
       <button>Create an Account</button>
     </div>
   </form>
+  </div>
+  </div>
 </template>
 
 <script>
@@ -58,23 +62,43 @@ export default {
       })
     },
     handleSubmit() {
-      // validate password
       this.passwordError = this.password.length > 5 ?
         '' : 'Password must be at least 6 characters long'
       if (!this.passwordError) {
-        // make request to database to save user
         console.log('email: ', this.email)
         console.log('password: ', this.password)
         console.log('role: ', this.role)
         console.log('skills: ', this.skills)
         console.log('terms accepted: ', this.terms)
+        alert("Account created")
       }
+    },
+    closeModal1() {
+            this.$emit('close')
     }
+  
   }
 }
 </script>
 
-<style>
+<style scoped>
+.modal1 {
+    width: 600px;
+    padding: 20px;  
+    margin: 100px auto;
+    background: white;
+    border-radius: 10px;
+    color: black !important;
+    text-align: center;
+}
+.backdrop1 {
+    bottom: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.726);
+    width: 100%;
+    height: 100%;   
+    z-index: 9000;
+}
   form {
     max-width: 420px;
     margin: 30px auto;

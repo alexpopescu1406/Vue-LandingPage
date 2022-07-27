@@ -6,6 +6,7 @@
         <a href="#c3"><i class="fa-solid fa-mobile-screen"> PLATFORMS</i></a>
         <a href="#c5"><i class="fa-solid fa-hourglass"> COMING SOON</i></a>
         <a href="#c4"><i class="fa-solid fa-envelope"> CONTACT</i></a>
+        
     </div> 
         
     <div class="header-image" id="c0"></div> 

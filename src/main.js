@@ -6,3 +6,4 @@ import router from './router'
 
 AOS.init();
 createApp(App).use(router).mount('#app')
+    

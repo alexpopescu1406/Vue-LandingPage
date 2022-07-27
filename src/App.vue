@@ -5,6 +5,20 @@
   <img src="../images/horizline.png" alt="line" class="horizline">
 
 <About /><br>
+<div v-if="showModal1">
+<LogIn @close="toggleModal1"> </LogIn>
+</div>
+<div
+    data-aos="fade-down-right"
+    data-aos-delay="0"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out-quad"
+    data-aos-mirror="false"
+    data-aos-once="true"
+    data-aos-offset="-20"
+    anchorPlacement="bottom">
+<button class="button-65" @click="toggleModal1">Register</button>
+</div><br>
 
 <div v-if="showModal">
 <Register @close="toggleModal">
@@ -54,6 +68,7 @@ import Games from './components/Games.vue'
 import Platforms from './components/Platforms.vue'
 import Countdown from './components/Countdown.vue'
 import Register from './components/Register.vue'
+import LogIn from './components/LogIn.vue'
 
 export default {
   name: 'App',
@@ -65,20 +80,25 @@ export default {
     ComingSoon,
     Contact,
     Countdown,
-    Register
+    Register,
+    LogIn
 },
 data () {
   return {
-    showModal:  false
+    showModal:  false,
+    showModal1: false
   }
 },
 methods: {
     toggleModal() {
         this.showModal = !this.showModal
+    },
+    toggleModal1() {
+        this.showModal1 = !this.showModal1
     }
 }
 }
-</script>
+</script> 
 
 <style scoped>  
 .horizline {
